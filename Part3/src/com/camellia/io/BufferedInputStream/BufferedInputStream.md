@@ -1,6 +1,15 @@
 # BufferedInputStream
+BufferedInputStream 是 Java 标准库中的一个类，属于 java.io 包，用于为输入流添加缓冲功能，从而提高读取效率。
+通过使用缓冲区，可以减少对底层输入流的访问次数，从而提高性能。
 
-## 一、BufferedInputStream构造方法
+## 一、BufferedInputStream 的主要特点和功能
+
+1. 缓冲区：BufferedInputStream 使用内部缓冲区来暂存读取的数据，默认缓冲区大小为 8192 字节（8 KB）。
+你可以通过构造函数指定不同大小的缓冲区。 
+2. 提高读取效率：由于减少了对底层输入流的访问次数（例如磁盘或网络），因此可以显著提高读取操作的效率。 
+3. 支持标记和重置：BufferedInputStream 支持对流进行标记和重置操作，方便在读取过程中回退到先前的位置。
+
+## 二、BufferedInputStream构造方法
 
 | 构造函数                                            | 描述                                                           |
 |-------------------------------------------------|--------------------------------------------------------------|
@@ -8,7 +17,7 @@
 | `BufferedInputStream(InputStream in, int size)` | 创建 `BufferedInputStream` 具有指定缓冲区大小的，并保存其参数（输入流） `in`，以供日后使用。 |
 
 
-## 二、BufferedInputStream常用方法
+## 三、BufferedInputStream常用方法
 
 | 修饰符和类型  | 方法                                 | 描述                                                  |
 |---------|------------------------------------|-----------------------------------------------------|
@@ -22,7 +31,7 @@
 | long    | `skip(long n)`                     | 跳过并丢弃输入流中的 `n` 个字节。                                 |
 
 
-## 三、示例代码
+## 四、示例代码
 
 ```java
 package com.camellia.io.BufferedInputStream;
