@@ -9,44 +9,44 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * {@code ObjectOutputStreamTest} ÀàÑİÊ¾ÁËÊ¹ÓÃ {@link ObjectOutputStream}
- * ½«Java¶ÔÏóĞòÁĞ»¯µ½ÎÄ¼şÖĞ¡£
+ * {@code ObjectOutputStreamTest} ç±»æ¼”ç¤ºäº†ä½¿ç”¨ {@link ObjectOutputStream}
+ * å°†Javaå¯¹è±¡åºåˆ—åŒ–åˆ°æ–‡ä»¶ä¸­ã€‚
  * <p>
- * {@code ObjectOutputStream} ÀàÓÃÓÚ¶ÔÏóµÄĞòÁĞ»¯£¬¼´½«Java¶ÔÏó×ª»»Îª¿ÉÒÔ
- * Ğ´ÈëÎÄ¼ş»òÍ¨¹ıÍøÂç´«ÊäµÄ×Ö½ÚÁ÷¡£
+ * {@code ObjectOutputStream} ç±»ç”¨äºå¯¹è±¡çš„åºåˆ—åŒ–ï¼Œå³å°†Javaå¯¹è±¡è½¬æ¢ä¸ºå¯ä»¥
+ * å†™å…¥æ–‡ä»¶æˆ–é€šè¿‡ç½‘ç»œä¼ è¾“çš„å­—èŠ‚æµã€‚
  * </p>
  * <p>
- * ĞòÁĞ»¯ÊÇ½«¶ÔÏó×ª»»Îª×Ö½ÚĞòÁĞµÄ¹ı³Ì£¬ÕâÑù¿ÉÒÔ½«Æä´æ´¢ÔÚÎÄ¼şÖĞ¡¢
- * Í¨¹ıÍøÂç´«Êä»ò±£´æµ½Êı¾İ¿âÖĞ¡£ĞòÁĞ»¯µÄ¶ÔÏó¿ÉÒÔÔÚÒÔºó·´ĞòÁĞ»¯£¬
- * ¼´½«×Ö½ÚĞòÁĞ×ª»»»ØJava¶ÔÏó¡£
+ * åºåˆ—åŒ–æ˜¯å°†å¯¹è±¡è½¬æ¢ä¸ºå­—èŠ‚åºåˆ—çš„è¿‡ç¨‹ï¼Œè¿™æ ·å¯ä»¥å°†å…¶å­˜å‚¨åœ¨æ–‡ä»¶ä¸­ã€
+ * é€šè¿‡ç½‘ç»œä¼ è¾“æˆ–ä¿å­˜åˆ°æ•°æ®åº“ä¸­ã€‚åºåˆ—åŒ–çš„å¯¹è±¡å¯ä»¥åœ¨ä»¥åååºåˆ—åŒ–ï¼Œ
+ * å³å°†å­—èŠ‚åºåˆ—è½¬æ¢å›Javaå¯¹è±¡ã€‚
  * </p>
  */
 public class ObjectOutputStreamTest {
 
     /**
-     * ²âÊÔ·½·¨£¬½«Ò»¸ö {@link Date} ¶ÔÏóĞòÁĞ»¯µ½ÎÄ¼şÖĞ¡£
+     * æµ‹è¯•æ–¹æ³•ï¼Œå°†ä¸€ä¸ª {@link Date} å¯¹è±¡åºåˆ—åŒ–åˆ°æ–‡ä»¶ä¸­ã€‚
      * <p>
-     * ¸Ã·½·¨´´½¨Ò»¸ö {@code ObjectOutputStream}£¬Ğ´Èëµ½ "src/document/object" ÎÄ¼ş¡£
-     * È»ºóĞòÁĞ»¯Ò»¸ö {@code Date} ¶ÔÏó£¬²¢½«ÆäĞ´ÈëÎÄ¼ş¡£
+     * è¯¥æ–¹æ³•åˆ›å»ºä¸€ä¸ª {@code ObjectOutputStream}ï¼Œå†™å…¥åˆ° "src/document/object" æ–‡ä»¶ã€‚
+     * ç„¶ååºåˆ—åŒ–ä¸€ä¸ª {@code Date} å¯¹è±¡ï¼Œå¹¶å°†å…¶å†™å…¥æ–‡ä»¶ã€‚
      * </p>
      */
     @Test
     public void testObjectOutputStream() {
-        // ¶ÔÏó×Ö½ÚÊä³öÁ÷£¬ÓÃÓÚĞòÁĞ»¯¶ÔÏó
+        // å¯¹è±¡å­—èŠ‚è¾“å‡ºæµï¼Œç”¨äºåºåˆ—åŒ–å¯¹è±¡
         ObjectOutputStream oos = null;
         try {
-            // ´´½¨Ò»¸öĞ´Èë "src/document/object" ÎÄ¼şµÄ ObjectOutputStream
+            // åˆ›å»ºä¸€ä¸ªå†™å…¥ "src/document/object" æ–‡ä»¶çš„ ObjectOutputStream
             oos = new ObjectOutputStream(new FileOutputStream("src/document/object"));
-            // ´´½¨Ò»¸öĞÂµÄ Date ¶ÔÏó×¼±¸ĞòÁĞ»¯
+            // åˆ›å»ºä¸€ä¸ªæ–°çš„ Date å¯¹è±¡å‡†å¤‡åºåˆ—åŒ–
             Date newTime = new Date();
-            // ĞòÁĞ»¯ Date ¶ÔÏó
+            // åºåˆ—åŒ– Date å¯¹è±¡
             oos.writeObject(newTime);
-            // Ë¢ĞÂÁ÷£¬È·±£ËùÓĞÊı¾İ±»Ğ´ÈëÎÄ¼ş
+            // åˆ·æ–°æµï¼Œç¡®ä¿æ‰€æœ‰æ•°æ®è¢«å†™å…¥æ–‡ä»¶
             oos.flush();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            // ¹Ø±Õ ObjectOutputStream ÒÔÊÍ·Å×ÊÔ´
+            // å…³é—­ ObjectOutputStream ä»¥é‡Šæ”¾èµ„æº
             if (oos != null) {
                 try {
                     oos.close();
@@ -58,38 +58,38 @@ public class ObjectOutputStreamTest {
     }
 
     /**
-     * ²âÊÔ·½·¨£¬½«¶à¸ö {@link Date} ¶ÔÏóĞòÁĞ»¯µ½ÎÄ¼şÖĞ¡£
+     * æµ‹è¯•æ–¹æ³•ï¼Œå°†å¤šä¸ª {@link Date} å¯¹è±¡åºåˆ—åŒ–åˆ°æ–‡ä»¶ä¸­ã€‚
      * <p>
-     * ¸Ã·½·¨´´½¨Ò»¸ö {@code ObjectOutputStream}£¬Ğ´Èëµ½ "src/document/dates" ÎÄ¼ş¡£
-     * È»ºóĞòÁĞ»¯Ò»¸ö°üº¬¶à¸ö {@code Date} ¶ÔÏóµÄ {@code List} ²¢½«ÆäĞ´ÈëÎÄ¼ş¡£
+     * è¯¥æ–¹æ³•åˆ›å»ºä¸€ä¸ª {@code ObjectOutputStream}ï¼Œå†™å…¥åˆ° "src/document/dates" æ–‡ä»¶ã€‚
+     * ç„¶ååºåˆ—åŒ–ä¸€ä¸ªåŒ…å«å¤šä¸ª {@code Date} å¯¹è±¡çš„ {@code List} å¹¶å°†å…¶å†™å…¥æ–‡ä»¶ã€‚
      * </p>
      */
     @Test
     public void testManyObjectOutputStream() {
-        // ¶ÔÏó×Ö½ÚÊä³öÁ÷£¬ÓÃÓÚĞòÁĞ»¯¶ÔÏó
+        // å¯¹è±¡å­—èŠ‚è¾“å‡ºæµï¼Œç”¨äºåºåˆ—åŒ–å¯¹è±¡
         ObjectOutputStream oos = null;
         try {
-            // ´´½¨Ò»¸öĞ´Èë "src/document/dates" ÎÄ¼şµÄ ObjectOutputStream
+            // åˆ›å»ºä¸€ä¸ªå†™å…¥ "src/document/dates" æ–‡ä»¶çš„ ObjectOutputStream
             oos = new ObjectOutputStream(new FileOutputStream("src/document/dates"));
-            // ´´½¨¶à¸ö Date ¶ÔÏó
+            // åˆ›å»ºå¤šä¸ª Date å¯¹è±¡
             Date newTime1 = new Date();
             Date newTime2 = new Date();
             Date newTime3 = new Date();
             Date newTime4 = new Date();
-            // ½« Date ¶ÔÏóÌí¼Óµ½ÁĞ±íÖĞ
+            // å°† Date å¯¹è±¡æ·»åŠ åˆ°åˆ—è¡¨ä¸­
             List<Date> list = new ArrayList<>();
             list.add(newTime1);
             list.add(newTime2);
             list.add(newTime3);
             list.add(newTime4);
-            // ĞòÁĞ»¯ Date ¶ÔÏóÁĞ±í
+            // åºåˆ—åŒ– Date å¯¹è±¡åˆ—è¡¨
             oos.writeObject(list);
-            // Ë¢ĞÂÁ÷£¬È·±£ËùÓĞÊı¾İ±»Ğ´ÈëÎÄ¼ş
+            // åˆ·æ–°æµï¼Œç¡®ä¿æ‰€æœ‰æ•°æ®è¢«å†™å…¥æ–‡ä»¶
             oos.flush();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            // ¹Ø±Õ ObjectOutputStream ÒÔÊÍ·Å×ÊÔ´
+            // å…³é—­ ObjectOutputStream ä»¥é‡Šæ”¾èµ„æº
             if (oos != null) {
                 try {
                     oos.close();
