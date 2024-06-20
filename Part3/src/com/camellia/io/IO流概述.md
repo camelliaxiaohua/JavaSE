@@ -4,8 +4,9 @@ Java中已经将io流实现了，在java.io包下，可以直接使用。
 ## 一、什么是IO流？
 水分子的移动形成了水流。
 IO流指的是：程序中数据的流动。数据可以从内存流动到硬盘，也可以从硬盘流动到内存。   
-Java中IO流最基本的作用是：完成文件的读和写。   
-![img_1.png](img_1.png)
+Java中IO流最基本的作用是：完成文件的读和写。 
+![](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/assert/IO%E6%B5%81%E6%A6%82%E8%BF%B0.png)
+
 ## 二、IO流的分类？
 
 ### 2.1 根据数据流向分为：输入和输出是相对于内存而言的。
