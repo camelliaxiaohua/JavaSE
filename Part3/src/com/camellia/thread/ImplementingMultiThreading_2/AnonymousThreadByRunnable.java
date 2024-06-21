@@ -1,4 +1,4 @@
-package com.camellia.thread.ImplementingMultiThreading;
+package com.camellia.thread.ImplementingMultiThreading_2;
 
 import org.junit.jupiter.api.Test;
 
