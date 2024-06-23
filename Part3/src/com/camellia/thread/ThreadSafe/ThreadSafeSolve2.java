@@ -2,7 +2,7 @@ package com.camellia.thread.ThreadSafe;
 
 public class ThreadSafeSolve2 {
     public static void main(String[] args) {
-        // 创建账户对象
+        // 创建账户对象，一把锁act。
         AccountSolve act = new AccountSolve("act-001", 10000);
         // 创建线程对象1
         Thread t1 = new Thread(new WithdrawSolve(act));
