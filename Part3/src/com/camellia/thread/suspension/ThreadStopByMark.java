@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.suspension;
+package com.camellia.thread.suspension;
 
 /**
  * 如何合理的以正常的方式终止一个线程的执行？
