@@ -1,4 +1,4 @@
-package com.camellia.thread.MethodForThreads_3;
+package com.camellia.thread.MethodForThreads;
 
 import org.junit.jupiter.api.Test;
 
