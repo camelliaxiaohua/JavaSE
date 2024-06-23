@@ -11,5 +11,5 @@
 ### 8. [线程的定时任务](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ScheduledTasks)
 ### 9. [线程的合并](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadMerging)
 ### 10. [线程的优先级](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadPriority)
-### 11.[线程的让位](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/yield)
-### 13.[线程的同步](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadSafe)
+### 11. [线程的让位](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/yield)
+### 12. [线程的同步](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadSafe)
