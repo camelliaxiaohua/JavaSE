@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadPriority;
+package com.camellia.thread.ThreadSafe;
 
 /**
  * 线程同步机制的面试题：分析以下程序 m2 方法在执行的时候，需要等待 m1 方法的结束吗？
