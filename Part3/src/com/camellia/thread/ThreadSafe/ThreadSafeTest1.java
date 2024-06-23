@@ -46,6 +46,7 @@ class MyRunnable implements Runnable {
     }
 }
 
+
 class MyClass {
     //检查加锁情况
     public synchronized void m1(){
