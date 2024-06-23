@@ -1,4 +1,4 @@
-package com.camellia.thread.Abegin_1;
+package com.camellia.thread.Abegin;
 
 /**
  * 分析当前程序有多少个线程
