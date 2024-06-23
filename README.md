@@ -13,3 +13,4 @@
 ### 10. [线程的优先级](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadPriority)
 ### 11. [线程的让位](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/yield)
 ### 12. [线程的同步](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadSafe)
+### 13. [死锁](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/deadlock)
