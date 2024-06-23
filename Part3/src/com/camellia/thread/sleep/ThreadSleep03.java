@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.sleep;
+package com.camellia.thread.sleep;
 
 /**
  * 如何解除线程的睡眠（怎么解除线程因sleep导致的阻塞，让其开始抢夺CPU时间片。）
