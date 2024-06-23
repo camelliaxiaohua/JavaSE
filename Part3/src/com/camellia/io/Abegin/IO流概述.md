@@ -1,9 +1,10 @@
 ---
 title: IO流概述
-date: 2024-06-16 09:14:25
+date: 2024-06-16 09:20:25
 tags:
 categories:
 - Java SE
+
 
 
 
@@ -12,32 +13,69 @@ categories:
 !!! note 目录
 <!-- toc -->
 
-# IO流概述
-Java中已经将io流实现了，在java.io包下，可以直接使用。
 
-## 一、什么是IO流？
-水分子的移动形成了水流。
-IO流指的是：程序中数据的流动。数据可以从内存流动到硬盘，也可以从硬盘流动到内存。   
-Java中IO流最基本的作用是：完成文件的读和写。   
-![](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/assert/IO%E6%B5%81%E6%A6%82%E8%BF%B0.png)
+# IO流体系结构
 
+1. **四大头领：**
+    - **InputStream**：用于读取==字节流==的基类。
+    - **OutputStream**：用于写入==字节流==的基类。
+    - **Reader**：用于读取==字符流==的基类。
+    - **Writer**：用于写入==字符流==的基类。
 
-## 二、IO流的分类？
+>都是抽象类
 
-### 2.1 根据数据流向分为：输入和输出是相对于内存而言的。
-1. 输入流：从硬盘到内存。(输入又叫做读：read)
-2. 输出流：从内存到硬盘。（输出又叫做写：write）
+2. **文件相关的流：**
 
-### 2.2 根据读写数据形式分为：
-1. **字节流**：一次读取一个字节。适合读取非文本数据。例如图片、声音、视频等文件。（当然字节流是万能的。什么都可以读和写。）
-2. **字符流**：一次读取一个字符。只适合读取普通文本。不适合读取二进制文件。因为字符流统一使用Unicode编码，可以避免出现编码混乱的问题。
->注意：Java的所有IO流中凡是以Stream结尾的都是字节流。凡是以Reader和Writer结尾的都是字符流。
+    - **FileInputStream**：从文件中读取==字节==。
+    - **FileOutputStream**：向文件中写入==字节==。
+    - **FileReader**：从文件中读取==字符==。
+    - **FileWriter**：向文件中写入==字符==。
 
-### 2.3 根据流在IO操作中的作用和实现方式来分类:
+3. **缓冲流相关的流：**
 
-1. **节点流**：<u>节点流负责数据源和数据目的地的连接</u>，是IO中最基本的组成部分。
-2. **处理流**：处理流对节点流进行装饰/包装，提供更多高级处理操作，方便用户进行数据处理。
+    - **BufferedInputStream**：提供了缓冲功能的==字节==输入流。
+    - **BufferedOutputStream**：提供了缓冲功能的==字节==输出流。
+    - **BufferedReader**：提供了缓冲功能的==字符==输入流。
+    - **BufferedWriter**：提供了缓冲功能的==字符==输出流。
 
+4. **转换流相关的流：**
 
+    - **InputStreamReader**：将字==**节流转换为字符流**==。
+    - **OutputStreamWriter**：将==**字符流转换为字节流**==。
 
+5. **打印流相关的流：**
+
+    - **PrintStream**：用于打印格式化的输出流。
+    - **PrintWriter**：提供了自动刷新功能的打印输出流。
+
+6. **对象流相关的流：**
+
+    - **ObjectInputStream**：用于从文件中读取==对象==。
+    - **ObjectOutputStream**：用于向文件中写入==对象==。
+
+7. **数据流相关的流：**
+
+    - **DataInputStream**：用于读取==基本数据类型==的流。
+    - **DataOutputStream**：用于写入==基本数据类型==的流。
+
+   > 对象流也具有数据流相关的功能
+
+8. **字节数组流相关的流：**
+
+    - **ByteArrayInputStream**：从==字节数组==中读取数据。
+    - **ByteArrayOutputStream**：向==字节数组==中写入数据。
+
+9. **压缩和解压缩相关的流：**
+
+    - **GZIPInputStream**：从GZIP格式的流中读取数据。
+    - **GZIPOutputStream**：将数据写入GZIP格式的流。
+
+10. **线程相关的流：**
+
+    - **PipedInputStream**：与PipedOutputStream配合使用，允许两个线程间的通信。
+    - **PipedOutputStream**：与PipedInputStream配合使用，允许两个线程间的通信。
+
+> 所有的流都实现了Closeable接口，都有close()方法，流用完要关闭。
+> 所有的输出流都实现了Flushable接口，都有flush()方法，flush方法
+> 的作用是，将缓存清空，全部写出。养成好习惯，以防数据丢失。
 
