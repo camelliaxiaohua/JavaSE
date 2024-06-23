@@ -1,4 +1,4 @@
-package com.camellia.thread.ImplementingMultiThreading_2;
+package com.camellia.thread.ImplementingMultiThreading;
 
 /**
  * 本类展示了在Java中如何实现多线程编程的第一种方式：
