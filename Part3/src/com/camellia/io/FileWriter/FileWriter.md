@@ -1,32 +1,49 @@
+---
+title: FileWriter
+date: 2024-06-16 22:28:34
+tags:
+categories:
+- Java SE
+---
+
+!!! note 目录
+<!-- toc -->
+
 # FileWriter
 
-`FileWriter` 是 Java 中用于将字符数据写入文件的类，**继承**自 `OutputStreamWriter`，属于 `java.io` 包。
+`FileWriter` 是 Java 中用于将==字符==数据写入文件的类，**继承**自 `OutputStreamWriter`，属于 `java.io` 包。
 它提供了将文本数据写入文件的功能，适用于处理文本文件的写入操作。
 
 ## 一、构造函数
 
-| 构造函数                                        | 描述                                           |
-|---------------------------------------------|----------------------------------------------|
-| FileWriter(File file)                       | 创建一个新的 `FileWriter`，给定要写入的 `File`，使用默认的字符编码。 |
-| FileWriter(File file, boolean append)       | 创建一个新的 `FileWriter`，给定要写入的 `File`，并指定是否追加写入。 |
-| FileWriter(FileDescriptor fd)               | 创建一个新的 `FileWriter`，给定 `FileDescriptor`。     |
-| FileWriter(String fileName)                 | 创建一个新的 `FileWriter`，给定要写入的文件的名称，使用默认的字符编码。   |
-| FileWriter(String fileName, boolean append) | 创建一个新的 `FileWriter`，给定要写入的文件的名称，并指定是否追加写入。   |
+| 构造函数                                            | 描述                                           |
+|-------------------------------------------------|----------------------------------------------|
+| * `FileWriter(File file)`                       | 创建一个新的 `FileWriter`，给定要写入的 `File`，使用默认的字符编码。 |
+| * `FileWriter(File file, boolean append)`       | 创建一个新的 `FileWriter`，给定要写入的 `File`，并指定是否追加写入。 |
+| `FileWriter(FileDescriptor fd)`                 | 创建一个新的 `FileWriter`，给定 `FileDescriptor`。     |
+| * `FileWriter(String fileName)`                 | 创建一个新的 `FileWriter`，给定要写入的文件的名称，使用默认的字符编码。   |
+| * `FileWriter(String fileName, boolean append)` | 创建一个新的 `FileWriter`，给定要写入的文件的名称，并指定是否追加写入。   |
 
 ## 二、常用方法
 
 > FileWriter extends OutputStreamWriter
 > 所以方法参考父类OutputStreamWriter
 
-| 方法                                   | 描述                |
-|--------------------------------------|-------------------|
-| write(int c)                         | 写入单个字符。           |
-| write(char[] cbuf)                   | 写入字符数组。           |
-| write(char[] cbuf, int off, int len) | 写入字符数组的指定部分。      |
-| write(String str)                    | 写入字符串。            |
-| write(String str, int off, int len)  | 写入字符串的指定部分。       |
-| flush()                              | 刷新流，将缓冲区中的数据写入文件。 |
-| close()                              | 关闭流并释放与之关联的资源。    |
+| 方法                                       | 描述                |
+|------------------------------------------|-------------------|
+| * `write(int c)`                         | 写入单个字符。           |
+| * `write(char[] cbuf)`                   | 写入字符数组。           |
+| * `write(char[] cbuf, int off, int len)` | 写入字符数组的指定部分。      |
+| * `write(String str)`                    | 写入字符串。            |
+| * `write(String str, int off, int len)`  | 写入字符串的指定部分。       |
+| * `flush()`                              | 刷新流，将缓冲区中的数据写入文件。 |
+| * `close()`                              | 关闭流并释放与之关联的资源。    |
+
+> [!NOTE]
+>
+> FileWriter对比FileOutputStream的write方法不同的一点是可以传入字符串。
+
+
 
 ## 三、示例代码
 
