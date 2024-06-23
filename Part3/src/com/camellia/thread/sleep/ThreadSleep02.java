@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.sleep;
+package com.camellia.thread.sleep;
 
 /**
  * 演示 Thread.sleep() 方法的使用和效果。
