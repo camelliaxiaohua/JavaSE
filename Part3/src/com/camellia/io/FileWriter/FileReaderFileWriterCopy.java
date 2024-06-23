@@ -24,7 +24,7 @@ public class FileReaderFileWriterCopy {
              FileWriter writer = new FileWriter("E:\\Learn\\JavaSE\\File\\filechar3.txt")) {
 
             char[] chars = new char[512]; // 定义字符数组作为缓冲区
-            int readCount;
+            int readCount = 0;
 
             // 循环读取文件的字符块，直到文件结束
             while ((readCount = reader.read(chars)) != -1) {
