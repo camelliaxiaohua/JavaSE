@@ -1,5 +1,4 @@
 package com.camellia.thread.Abegin;
-
 /**
  * 分析当前程序有多少个线程
  * 当前程序除了GC线程之外只有一个主线程。
