@@ -1,6 +1,6 @@
 # Java SE
 
-## [Thread（线程）](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/com/camellia/thread/readme.md)
+## 一、[Thread（线程）](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/com/camellia/thread/readme.md)
 
 ### 1. [线程的概述&并发并行](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/Abegin)
 ### 2. [多线程的实现](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ImplementingMultiThreading)
