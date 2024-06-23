@@ -1,3 +1,14 @@
+---
+title: Try-With-Resources
+date: 2024-06-16 22:30:45
+tags:
+categories:
+- Java SE
+---
+
+!!! note 目录
+<!-- toc -->
+
 # Try-With-Resources
 
 Java 的 `try-with-resources` 语句是用于自动管理资源的一个结构化机制。
@@ -12,8 +23,12 @@ Java 的 `try-with-resources` 语句是用于自动管理资源的一个结构�
 
 ## 二、使用方法
 
-任何实现了 `AutoCloseable` 或 `Closeable` 接口的对象都可以用在 `try-with-resources` 语句中。
-`AutoCloseable` 是 `Closeable` 的父接口。
+> [!NOTE]
+>
+> 任何实现了 [`AutoCloseable`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/AutoCloseable.html) 或 [`Closeable`](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Closeable.html) 接口的对象都可以用在 `try-with-resources` 语句中。
+> `AutoCloseable` 是 `Closeable` 的父接口。
+
+
 
 ### 2.1 语法
 
@@ -24,7 +39,11 @@ try (ResourceType resource = new ResourceType()) {
     // 异常处理代码
 }
 ```
-其中 `ResourceType` 必须实现 `AutoCloseable` 接口。
+> [!NOTE]
+>
+> 其中 `ResourceType` 必须实现 `AutoCloseable` 接口。也就是在IO流中要想使用Try-With-Resources，就必须实现接口。
+
+
 
 ### 2.2 示例
 
@@ -71,15 +90,15 @@ public class TryWithResources {
 
 ```java
 try (
-    FileInputStream fis = new FileInputStream("input.txt");
-    FileOutputStream fos = new FileOutputStream("output.txt")
+FileInputStream fis = new FileInputStream("input.txt");
+FileOutputStream fos = new FileOutputStream("output.txt")
 ) {
-    int data;
+int data;
     while ((data = fis.read()) != -1) {
         fos.write(data);
     }
-} catch (IOException e) {
-    e.printStackTrace();
+            } catch (IOException e) {
+        e.printStackTrace();
 }
 ```
 在这个示例中，`FileInputStream` 和 `FileOutputStream` 都会在 try 块结束时自动关闭。
