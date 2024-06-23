@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.ScheduledTasks;
+package com.camellia.thread.ScheduledTasks;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
