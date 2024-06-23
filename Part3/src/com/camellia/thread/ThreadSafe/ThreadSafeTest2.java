@@ -6,7 +6,7 @@ package com.camellia.thread.ThreadSafe;
  *
  * 线程t1,t2共用一把锁，而且m1和m2方法都添加了synchronized关键字。所以都保持同步机制。
  */
-public class ThreadTest2 {
+public class ThreadSafeTest2 {
     public static void main(String[] args) {
         // 一把锁
         MyClass2 mc = new MyClass2();
