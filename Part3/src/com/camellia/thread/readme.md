@@ -1,5 +1,4 @@
-# 线程
-
+## 线程
 ### 1. [线程的概述&并发并行](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/Abegin)
 ### 2. [多线程的实现](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ImplementingMultiThreading)
 ### 3. [线程的常用方法](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/MethodForThreads)
@@ -10,3 +9,5 @@
 ### 8. [线程的定时任务](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ScheduledTasks)
 ### 9. [线程的合并](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadMerging)
 ### 10. [线程的优先级](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadPriority)
+### 11.[线程的让位](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/yield)
+### 13.[线程的同步](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadSafe)
