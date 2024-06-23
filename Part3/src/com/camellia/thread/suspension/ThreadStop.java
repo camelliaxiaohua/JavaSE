@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.suspension;
+package com.camellia.thread.suspension;
 
 /**
  * 如何停止线程？
