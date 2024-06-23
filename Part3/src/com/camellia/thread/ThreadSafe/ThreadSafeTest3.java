@@ -6,7 +6,7 @@ package com.camellia.thread.ThreadSafe;
  *
  * 这里有mc1,mc2两把锁。而且t1只抢夺mc1，t2只抢夺mc2。所以各自加锁不会影响对方。
  */
-public class ThreadTest3 {
+public class ThreadSafeTest3 {
     public static void main(String[] args) {
         MyClass3 mc1 = new MyClass3();
         MyClass3 mc2 = new MyClass3();
