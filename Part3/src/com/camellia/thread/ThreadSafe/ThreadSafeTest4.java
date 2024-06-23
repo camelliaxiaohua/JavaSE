@@ -10,7 +10,7 @@ package com.camellia.thread.ThreadSafe;
  * 静态方法上添加synchronized，实际上是为了保证静态变量的安全。
  * 实例方法上添加synchronized，实际上是为了保证实例变量的安全。
  */
-public class ThreadTest4 {
+public class ThreadSafeTest4 {
     public static void main(String[] args) {
         MyClass4 mc1 = new MyClass4();
         MyClass4 mc2 = new MyClass4();
