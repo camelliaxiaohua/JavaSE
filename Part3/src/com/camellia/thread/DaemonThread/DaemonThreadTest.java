@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.daemon_thread;
+package com.camellia.thread.DaemonThread;
 
 /**
  * <p>
