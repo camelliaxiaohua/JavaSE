@@ -1,4 +1,4 @@
-package com.camellia.thread.ThreadLifecycle_4.sleep;
+package com.camellia.thread.sleep;
 
 /**
  * 关于线程的 sleep 方法
