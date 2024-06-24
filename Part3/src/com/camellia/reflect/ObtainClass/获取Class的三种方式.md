@@ -5,7 +5,6 @@
 ```java
 Class c = Class.forName("完整的全限定类名");
 ```
-
 - 注意：
     1. 全限定类名带有包名的。
     2. 虽然是lang包下，java.lang也不可省略。
