@@ -3,7 +3,6 @@ package com.camellia.thread.ThreadedCommunication;
 public class AlternatePrinting {
     public static void main(String[] args) {
         Printer printer = new Printer();
-
         Thread t1 = new Thread(new PrintTask(printer, 1));
         Thread t2 = new Thread(new PrintTask(printer, 2));
         Thread t3 = new Thread(new PrintTask(printer, 3));
