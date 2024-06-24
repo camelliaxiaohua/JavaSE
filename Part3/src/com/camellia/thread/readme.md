@@ -13,3 +13,8 @@
 #### 12. [线程的同步](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadSafe)
 #### 13. [死锁](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/deadlock)
 #### 14.[线程的通信](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part3/src/com/camellia/thread/ThreadedCommunication)
+
+
+> [!IMPORTANT]
+>
+> 多线程主要的是：线程安全、线程的通信。
