@@ -11,3 +11,7 @@
 >2. 访问修改对象属性。
 
 ## [Annotation（注解）](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/com/camellia/annotation/readme.md)
+> [!IMPORTANT]
+> 1. 自定义注解
+> 2. 元注解
+
