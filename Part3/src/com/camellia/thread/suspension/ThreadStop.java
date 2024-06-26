@@ -15,7 +15,7 @@ public class ThreadStop {
             e.printStackTrace();
         }
         //这方法已经淘汰了，Java21测试已经不能关闭了。
-        thread.stop();
+        //thread.stop();
     }
 }
 
