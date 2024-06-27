@@ -1,5 +1,7 @@
 # Java SE
 
+## [Java基础知识](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part1/src/com/camellia/basic)
+
 ## [Thread（线程）](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/com/camellia/thread/readme.md)
 > [!IMPORTANT]
 >
