@@ -3,6 +3,9 @@
 ## [Java基础知识](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part1/src/com/camellia/basic)
 
 ## [变量类型](https://github.com/camelliaxiaohua/JavaSE/tree/master/Part1/src/com/camellia/variable)
+## [字节码解读]()
+## [运算符]()
+## [switch]()
 
 ## [Thread（线程）](https://github.com/camelliaxiaohua/JavaSE/blob/master/Part3/src/com/camellia/thread/readme.md)
 > [!IMPORTANT]
