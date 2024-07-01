@@ -1,4 +1,4 @@
-package com.camellia.oop.class9;
+package com.camellia.extend;
 
 public class EnglishPerson extends Person{
     @Override
